@@ -58,7 +58,7 @@ echo "http://dl-3.alpinelinux.org/alpine/v3.6/community" >> /etc/apk/repositorie
 set > /root/env.sh
 
 #download boot script
-wget https://raw.githubusercontent.com/ArchiveTeam/Ubuntu-Warrior/master/boot.sh -O /root/boot.sh
+wget https://raw.githubusercontent.com/chfoo/Ubuntu-Warrior/testdev/boot.sh -O /root/boot.sh
 chmod +x /root/boot.sh
 
 #Update and install Docker

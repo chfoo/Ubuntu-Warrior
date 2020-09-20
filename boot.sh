@@ -2,8 +2,8 @@
 CHECK_HOST=warriorhq.archiveteam.org
 MIN_CHECK_INTERVAL=5
 MAX_CHECK_INTERVAL=300
-REPO_PREFIX=https://raw.githubusercontent.com/ArchiveTeam/Ubuntu-Warrior/
-BRANCH=master
+REPO_PREFIX=https://raw.githubusercontent.com/chfoo/Ubuntu-Warrior/
+BRANCH=testdev
 
 if [ -f /root/branch.txt ]; then
     BRANCH=`cat /root/branch.txt`
