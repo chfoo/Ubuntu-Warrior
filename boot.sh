@@ -2,6 +2,7 @@
 CHECK_HOST=warriorhq.archiveteam.org
 MIN_CHECK_INTERVAL=5
 MAX_CHECK_INTERVAL=300
+REPO_PREFIX=https://raw.githubusercontent.com/ArchiveTeam/Ubuntu-Warrior/
 BRANCH=master
 
 if [ -f /root/branch.txt ]; then
@@ -32,7 +33,7 @@ if [ -f /root/startup.sh ]; then
 fi
 while true; do
 rm -f /root/startup.sh /root/startup.sh-new
-wget -q https://raw.githubusercontent.com/ArchiveTeam/Ubuntu-Warrior/$BRANCH/startup.sh -O /root/startup.sh-new
+wget -q ${REPO_PREFIX}$BRANCH/startup.sh -O /root/startup.sh-new
 if [ $? -eq 0 ]; then
     mv /root/startup.sh-new /root/startup.sh
     echo "Done!"
